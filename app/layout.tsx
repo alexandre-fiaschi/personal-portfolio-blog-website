@@ -9,7 +9,7 @@ import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Alexandre Fiaschi",
-  description: "My blog-portfolio-resume :)",
+  description: "My blog-portfolio-resume",
 };
 
 export default function RootLayout({
