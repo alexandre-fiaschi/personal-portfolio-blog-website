@@ -141,7 +141,7 @@ export default defineConfig({
           {
             name: "link",
             type: "string",
-            label: "Link",
+            label: "The Link",
             required: true
           },
           /* {
