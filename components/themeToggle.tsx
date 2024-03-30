@@ -9,12 +9,12 @@ export function ThemeToggle() {
 	return (
 		<>
 		<button onClick={() => setTheme("light")}
-		className="hidden text-grey-300 dark:flex hover:text-emerald-500"
+		className="hidden text-gray-300 dark:flex hover:text-emerald-500"
 		>
 			<RxSun/>
 		</button>
 		<button onClick={() => setTheme("dark")}
-		className="flex text-grey-600 dark:hidden hover:text-emerald-500"
+		className="flex text-gray-600 dark:hidden hover:text-emerald-500"
 		>
 			<RxMoon/>
 		</button>

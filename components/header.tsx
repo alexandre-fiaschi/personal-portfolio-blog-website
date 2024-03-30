@@ -9,7 +9,7 @@ export default function Header() {
 		//className="sticky top-0 z-10 mb-20 mt-16 flex content-center items-center justify-between font-sans text-base shadow-md bg-background"
 		//className="sticky top-0 z-10 pt-20 mb-20 mt-16 flex content-center items-center justify-between font-sans text-base bg-background shadow-[0_4px_2px_-2px_rgba(0,0,0,0.25)]"
 		//className="sticky top-0 z-10 pt-8 mb-8 mt-16 opacity-95 flex content-center items-center justify-between font-sans text-base bg-background"
-		className="sticky top-0 z-10 pt-7 pb-7 flex content-center items-center justify-between font-sans text-base bg-background opacity-95 dark:opacity-93"
+		className="sticky top-0 z-10 pt-7 pb-7 flex content-center items-center justify-between font-sans text-base bg-background opacity-95 dark:opacity-90"
 		>
 			<div className="flex gap-4">
 				<Link href="/" className="max-sm:hidden hover:text-emerald-500">Home</Link>

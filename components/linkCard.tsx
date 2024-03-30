@@ -13,8 +13,8 @@ export const LinkCard = ({
 		<Link
 		href={link}
 		target="_blank"
-		className="className=group relative overflow-hidden
-		rounded-x1 border border-zinc-200
+		className="group relative overflow-hidden
+		rounded-xl border border-zinc-200
 		hover:border-zinc-800/50 hover:bg-zinc-400/10
 		dark:border-zinc-600
 		dark:hover:border-zinc-400/50

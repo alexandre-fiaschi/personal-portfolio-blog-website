@@ -47,7 +47,7 @@ export function PostListPageComponent(props:{
 			Blog
 		</h1>
 		<div className="flex md:space-x-12">
-			<div className="hidden h-full mac-h-screen min-w-[280px]
+			<div className="hidden h-full max-h-screen min-w-[280px]
 			max-w-[280px] flex-wrap overflow-auto
 			rounded bg-muted pt-5 font-sans md:flex">
 				<div className="px-6 py-4">
@@ -65,7 +65,7 @@ export function PostListPageComponent(props:{
 								text-sm font-medium uppercase ${props.tag === tag
 									?"pointer-events-none text-emerald-600 dark:text-emerald-400"
 								:"text-primary hover:text-emerald-500 dark:text-zinc-300 dark:hover:text-emerald-500"}`}
-								aria-lable={`View posts tagged ${tag}`}
+								aria-label={`View posts tagged ${tag}`}
 								href={`/posts/tags/${tag}`}>
 
 								{tag} ({tags[tag]})

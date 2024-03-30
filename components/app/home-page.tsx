@@ -36,7 +36,7 @@ export function HomePageComponent(props:{
 			{
 				postList && postList.length>0 && (
 					<section>
-						<h2 className="mt-8 txt-3xl">Latest Posts</h2>
+						<h2 className="mt-8 text-3xl">Latest Posts</h2>
 						Soon...
 						{/* <ul className="list-[circle]">
 

@@ -18,7 +18,7 @@ export const TextBox = (props:any) => {
 
 export const TweetEmbed = (props:any) => {
 	return (
-		<div className="flex flex-items-center justify-center">
+		<div className="flex items-center justify-center">
 			<Tweet id ={`${props.tweetId}`}/>
 		</div>
 	)
@@ -27,7 +27,7 @@ export const TweetEmbed = (props:any) => {
 export const PullQuote = (props: any) => {
 	return (
 			<>
-				<blockquote className="mb-1 border-1-4 border-gray-200
+				<blockquote className="mb-1 border-l-4 border-gray-200
 				leading-8 dark:border-gray-700">
 					<p className="mb-1 opacity-80">
 						{props.text}
@@ -52,8 +52,8 @@ export const VideoPlayer = (props: any) => {
 export const CaptionedImage = (props: any) => {
 	return (
 		<figure className="flex flex-col items-center
-		justify-center py-6 md:m]-[-50px] md:min-w-[calc(100%+100px)]
-		1g:mI-[-100px] 1g:min-w-[calc(100%+200px)] x]:m]-[-130px]
+		justify-center py-6 md:ml-[-50px] md:min-w-[calc(100%+100px)]
+		lg:ml-[-100px] lg:min-w-[calc(100%+200px)] xl:ml-[-130px]
 		xl:min-w-[calc(100%+260px)]">
 			<img style= {{maxWidth: "100%"}} src={props.imgUrl} alt={props.alt}/>
 			<figcaption className="text-[.8em]">
