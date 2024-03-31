@@ -7,7 +7,8 @@ const nextConfig = {
 				destination: "/admin/index.html"
 			}
 		]
-	}
+	},
+	cleanDistDir: true
 };
 
 export default nextConfig;
