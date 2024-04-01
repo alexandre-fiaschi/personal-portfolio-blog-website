@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ThemeToggle } from "./themeToggle";
-import { RxChatBubble, RxCodesandboxLogo, RxDividerVertical, RxHome, RxLinkedinLogo, RxPerson, RxFileText } from "react-icons/rx";
+import { RxChatBubble, RxCodesandboxLogo, RxEnvelopeClosed, RxDividerVertical, RxHome, RxLinkedinLogo, RxPerson, RxFileText } from "react-icons/rx";
 
 export default function Header() {
 
@@ -18,16 +18,20 @@ export default function Header() {
 				<Link href="/posts" className="sm:hidden hover:text-emerald-500"><RxChatBubble /></Link>
 				<Link href="/projects" className="max-sm:hidden hover:text-emerald-500">Projects</Link>
 				<Link href="/projects" className="sm:hidden hover:text-emerald-500"><RxCodesandboxLogo /></Link> */}
-				<Link href="/about" className="max-sm:hidden hover:text-emerald-500">About/Resume</Link>
+				<Link href="/about" className="max-sm:hidden hover:text-emerald-500">About Me</Link>
 				<Link href="/about" className="sm:hidden hover:text-emerald-500"><RxPerson /></Link>
 				<RxDividerVertical className="my-auto dark:text-gray-400"/>
 				<Link href="https://drive.google.com/file/d/1mqEgpWsCg-Vee9mJz-zkgB81NFKRszYT/view?usp=drive_link" target = "_blank" rel = "noopener noreferrer" className="max-sm:hidden hover:text-emerald-500">Download CV</Link>
 				<Link href="https://drive.google.com/file/d/1mqEgpWsCg-Vee9mJz-zkgB81NFKRszYT/view?usp=drive_link" target = "_blank" rel = "noopener noreferrer" className="sm:hidden hover:text-emerald-500"><RxFileText/></Link>
 			</div>
 			<div className="flex justify-between gap-4">
+				<Link href="mailto:alexandrefiaschi10@gmail.com?subject=Contact&body=Hello Alex,%0D%0A%0D%0AI'm contacting you because.." className="hover:text-emerald-500">
+					<RxEnvelopeClosed/>
+				</Link>
 				<Link href="https://www.linkedin.com/in/alexandre-fiaschi-10af/" className="hover:text-emerald-500">
 					<RxLinkedinLogo/>
 				</Link>
+
 
 				<RxDividerVertical className="dark:text-gray-400" />
 				<ThemeToggle />

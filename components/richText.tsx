@@ -52,7 +52,7 @@ export const VideoPlayer = (props: any) => {
 export const CaptionedImage = (props: any) => {
 	return (
 		<figure className="flex flex-col items-center
-		justify-center py-6 md:ml-[-50px] md:min-w-[calc(100%+100px)]
+		justify-center rounded-lg py-6 md:ml-[-50px] md:min-w-[calc(100%+100px)]
 		lg:ml-[-100px] lg:min-w-[calc(100%+200px)] xl:ml-[-130px]
 		xl:min-w-[calc(100%+260px)]">
 			<img style= {{maxWidth: "100%"}} src={props.imgUrl} alt={props.alt}/>

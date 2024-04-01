@@ -14,8 +14,6 @@ export default async function Page({ params }: {
       console.error(err)
       return notFound()
     })
-
   return <PageComponent {...result}/>
-
 }
 
