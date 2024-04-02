@@ -5,6 +5,7 @@ import { tinaField, useTina } from "tinacms/dist/react"
 import { TinaMarkdown } from "tinacms/dist/rich-text"
 import { TextBox, TweetEmbed, PullQuote, VideoPlayer, CaptionedImage } from "../richText"
 
+
 export function PageComponent(props:{
 	data:PageQuery
 	variables:{
@@ -16,8 +17,8 @@ export function PageComponent(props:{
 	const title = data.page.title
 	const content = data.page.body
 
-	return (
 
+	return (
 		<article>
 			<h1 data-tina-field={tinaField(data.page, "title")}>
 			{title}

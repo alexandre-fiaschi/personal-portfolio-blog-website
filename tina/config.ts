@@ -49,6 +49,7 @@ export default defineConfig({
             isBody: true,
             templates: richTextComponents,
           },
+
         ],
         ui: {
           // This is an DEMO router. You can remove this to fit your site

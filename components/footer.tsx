@@ -9,7 +9,7 @@ export default function Footer() {
 				{" "}
 				<Link href="https://www.linkedin.com/in/alexandre-fiaschi-10af/"
 				target="_blank"
-				className="underline-offset-2
+				className="header-link underline-offset-2
 				hover:text-emerald-500
 				hover:underline">
 					Alex

@@ -33,6 +33,9 @@
     --ring: 0 0% 3.9%;
 
     --radius: 0.5rem;
+
+    --link: 156, 67%, 42%; /* Approximating Tailwind's emerald-600 for light mode */
+    --link-hover: 156, 67%, 35%; /* Darker for hover state in light mode */
   }
 
   .dark {
@@ -63,6 +66,9 @@
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
     --ring: 0 0% 83.1%;
+
+    --link: 156, 67%, 43%; /* Approximating Tailwind's emerald-400 for dark mode */
+    --link-hover: 156, 67%, 30%; /* Lighter for hover state in dark mode */
   }
 }
 
@@ -72,5 +78,16 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  a:not(.header-link) {
+    @apply text-link hover:text-link-hover;
+    transition: color 0.3s;
+  }
+  a:not(.header-link):hover {
+    @apply text-link-hover underline; /* Apply underline only on hover */
+  }
+  ol {
+    list-style-type: decimal; /* This ensures that numbers are displayed */
+    list-style-position: outside; /* Change to 'outside' if preferred */
   }
 }
