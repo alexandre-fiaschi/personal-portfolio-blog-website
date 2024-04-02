@@ -28,7 +28,7 @@ export default function Header() {
 				<Link href="mailto:alexandrefiaschi10@gmail.com?subject=Contact&body=Hello Alex,%0D%0A%0D%0AI'm contacting you because.." className="header-link hover:text-emerald-500">
 					<RxEnvelopeClosed/>
 				</Link>
-				<Link href="https://www.linkedin.com/in/alexandre-fiaschi-10af/" className="header-link hover:text-emerald-500">
+				<Link href="https://www.linkedin.com/in/alexandre-fiaschi-10af/" target = "_blank" rel = "noopener noreferrer" className="header-link hover:text-emerald-500">
 					<RxLinkedinLogo/>
 				</Link>
 
