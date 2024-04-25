@@ -2,6 +2,7 @@ import Link from "next/link"
 import { ThemeToggle } from "./themeToggle"
 import {
   RxChatBubble,
+  RxBackpack,
   RxCodesandboxLogo,
   RxEnvelopeClosed,
   RxDividerVertical,
@@ -25,9 +26,31 @@ export default function Header() {
           <RxHome />
         </Link>
         {/* <Link href="/posts" className="max-sm:hidden hover:text-emerald-500">Blog</Link>
-				<Link href="/posts" className="sm:hidden hover:text-emerald-500"><RxChatBubble /></Link>
-				<Link href="/projects" className="max-sm:hidden hover:text-emerald-500">Projects</Link>
-				<Link href="/projects" className="sm:hidden hover:text-emerald-500"><RxCodesandboxLogo /></Link> */}
+				<Link href="/posts" className="sm:hidden hover:text-emerald-500"><RxChatBubble /></Link>*/}
+        <Link
+          href="/projects"
+          className="header-link hover:text-emerald-500 max-sm:hidden"
+        >
+          Projects
+        </Link>
+        <Link
+          href="/projects"
+          className="header-link hover:text-emerald-500 sm:hidden"
+        >
+          <RxCodesandboxLogo />
+        </Link>
+        <Link
+          href="/work-experience"
+          className="header-link hover:text-emerald-500 max-sm:hidden"
+        >
+          Work Experience
+        </Link>
+        <Link
+          href="/work-experience"
+          className="header-link hover:text-emerald-500 sm:hidden"
+        >
+          <RxBackpack />
+        </Link>
         <Link
           href="/about"
           className="header-link hover:text-emerald-500 max-sm:hidden"
@@ -40,6 +63,7 @@ export default function Header() {
         >
           <RxPerson />
         </Link>
+
         <RxDividerVertical className="my-auto dark:text-gray-400" />
         <Link
           href="https://drive.google.com/file/d/1mqEgpWsCg-Vee9mJz-zkgB81NFKRszYT/view?usp=drive_link"
