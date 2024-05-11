@@ -1,12 +1,12 @@
-import { defineConfig } from "tinacms";
-import { richTextComponents } from "./richtext-schema";
+import { defineConfig } from "tinacms"
+import { richTextComponents } from "./richtext-schema"
 
 // Your hosting provider likely exposes this as an environment variable
 const branch =
   process.env.GITHUB_BRANCH ||
   process.env.VERCEL_GIT_COMMIT_REF ||
   process.env.HEAD ||
-  "main";
+  "main"
 
 export default defineConfig({
   branch,
@@ -49,22 +49,23 @@ export default defineConfig({
             isBody: true,
             templates: richTextComponents,
           },
-
         ],
         ui: {
           // This is an DEMO router. You can remove this to fit your site
           router: ({ document }) => {
-            if (document._sys.filename==="home"){
+            if (document._sys.filename === "home") {
               return `/`
             }
             return undefined
           },
           filename: {
             slugify: (values) => {
-            return `${(values.title || "").toLowerCase().replace(/ /g, "-")}`.replace(/[^\w\.\/-\s]/gi,"",
-            )
+              return `${(values.title || "").toLowerCase().replace(/ /g, "-")}`.replace(
+                /[^\w\.\/-\s]/gi,
+                "",
+              )
+            },
           },
-        },
         },
       },
       {
@@ -84,14 +85,14 @@ export default defineConfig({
             name: "date",
             type: "datetime",
             label: "Date",
-            required: true
+            required: true,
           },
           {
             name: "tags",
             type: "string",
             label: "Tags",
             //required: true
-            list: true
+            list: true,
           },
           {
             name: "body",
@@ -101,10 +102,10 @@ export default defineConfig({
             templates: richTextComponents,
           },
         ],
-        defaultItem:() => {
-          return{
+        defaultItem: () => {
+          return {
             //title: "New Post",
-            date: new Date()
+            date: new Date(),
           }
         },
         ui: {
@@ -114,11 +115,13 @@ export default defineConfig({
           },
           filename: {
             slugify: (values) => {
-            return `${(values.title || "").toLowerCase().replace(/ /g, "-")}`.replace(/[^\w\.\/-\s]/gi,"",
-            )
+              return `${(values.title || "").toLowerCase().replace(/ /g, "-")}`.replace(
+                /[^\w\.\/-\s]/gi,
+                "",
+              )
+            },
           },
         },
-      },
       },
       {
         name: "project",
@@ -137,14 +140,19 @@ export default defineConfig({
             name: "description",
             type: "string",
             label: "Description",
-            required: true
+            required: true,
           },
           {
             name: "link",
             type: "string",
             label: "The Link",
-            required: true
+            required: true,
           },
+          // {
+          //   type: "image",
+          //   label: "Hero image",
+          //   name: "imgSrc",
+          // },
           /* {
             //To change with years
             name: "date",
@@ -167,18 +175,20 @@ export default defineConfig({
           }
         }, */
         ui: {
-         /*  use it to implement same structure as blog
+          /*  use it to implement same structure as blog
          router: ({ document }) => {
             return `/posts/${document._sys.filename}`
           }, */
           filename: {
             slugify: (values) => {
-            return `${(values.title || "").toLowerCase().replace(/ /g, "-")}`.replace(/[^\w\.\/-\s]/gi,"",
-            )
+              return `${(values.title || "").toLowerCase().replace(/ /g, "-")}`.replace(
+                /[^\w\.\/-\s]/gi,
+                "",
+              )
+            },
           },
         },
       },
-      },
     ],
   },
-});
+})

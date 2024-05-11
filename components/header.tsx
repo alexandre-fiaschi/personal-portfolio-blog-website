@@ -1,7 +1,6 @@
 import Link from "next/link"
 import { ThemeToggle } from "./themeToggle"
 import {
-  RxChatBubble,
   RxBackpack,
   RxCodesandboxLogo,
   RxEnvelopeClosed,
@@ -10,6 +9,7 @@ import {
   RxLinkedinLogo,
   RxPerson,
   RxFileText,
+  RxGithubLogo,
 } from "react-icons/rx"
 
 export default function Header() {
@@ -96,6 +96,14 @@ export default function Header() {
           className="header-link hover:text-emerald-500"
         >
           <RxLinkedinLogo />
+        </Link>
+        <Link
+          href="https://github.com/alexandre-fiaschi"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="header-link hover:text-emerald-500"
+        >
+          <RxGithubLogo />
         </Link>
 
         <RxDividerVertical className="dark:text-gray-400" />
