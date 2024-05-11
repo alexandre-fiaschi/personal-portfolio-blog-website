@@ -8,6 +8,7 @@ description: >-
   real-time weather information and at the moment it dynamically generates
   (hallucinate) flights and hotels coherent with the user input query. The
   user-friendly interface was inspired by a mockup from an online course.
-link: 'https://github.com/alexandre-fiaschi/ai-travel-agent-simple'
+link: >-
+  https://github.com/alexandre-fiaschi/ai-travel-agent-simple/blob/main/README.md
 ---
 
