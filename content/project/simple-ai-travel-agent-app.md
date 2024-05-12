@@ -10,5 +10,6 @@ description: >-
   user-friendly interface was inspired by a mockup from an online course.
 link: >-
   https://github.com/alexandre-fiaschi/ai-travel-agent-simple/blob/main/README.md
+imgSrc: /projects/file (2).png
 ---
 

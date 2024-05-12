@@ -1,13 +1,16 @@
+import { url } from "inspector"
 import Link from "next/link"
 
 export const LinkCard = ({
   link,
   title,
   description,
+  imgSrc,
 }: {
   link: string
   title: string
   description: string
+  imgSrc: string
 }) => {
   return (
     <Link
@@ -21,6 +24,20 @@ export const LinkCard = ({
 		dark:hover:bg-zinc-800/10 md:gap-8"
     >
       <article className="p-4 md:p-8">
+        <img
+          src={imgSrc}
+          className="h-50 group relative
+		 rounded-lg border
+		
+		dark:border-zinc-600
+		dark:hover:border-zinc-400/50
+		dark:hover:bg-zinc-800/10 md:gap-8"
+          // style={{
+          //   height: "100px",
+          //   objectFit: "cover",
+          //   backgroundImage: `url(${imgSrc})`,
+          // }}
+        />
         <h2
           className="z-20 text-xl font-medium
 				text-zinc-800 group-hover:text-black
@@ -29,6 +46,7 @@ export const LinkCard = ({
         >
           {title}
         </h2>
+
         <p
           className="z-20 mt-4 text-sm
 				text-zinc-600 group-hover:text-zinc-800

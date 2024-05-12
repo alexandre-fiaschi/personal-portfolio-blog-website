@@ -13,5 +13,6 @@ description: >-
   unlock the full potential of the FL3XX API and drive innovation within their
   teams.
 link: 'https://developer.fl3xx.com/docs/getting-started'
+imgSrc: /projects/file.png
 ---
 

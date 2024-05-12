@@ -148,11 +148,11 @@ export default defineConfig({
             label: "The Link",
             required: true,
           },
-          // {
-          //   type: "image",
-          //   label: "Hero image",
-          //   name: "imgSrc",
-          // },
+          {
+            name: "imgSrc",
+            type: "image",
+            label: "Hero image",
+          },
           /* {
             //To change with years
             name: "date",
