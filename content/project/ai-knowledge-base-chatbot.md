@@ -13,6 +13,6 @@ description: >-
   intuitive experience for users interacting with the AI.
 link: >-
   https://github.com/alexandre-fiaschi/ai-knowledge-base-chat/blob/main/README.md
-imgSrc: /app-mockup.png
+imgSrc: /app-mockup-resized.png
 ---
 
